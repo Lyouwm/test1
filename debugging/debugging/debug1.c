@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS 1
+ï»¿#define _CRT_SECURE_NO_WARNINGS 1
 
 
 #include <stdio.h>
@@ -6,10 +6,10 @@
 
 
 //
-//F5-Æô¶¯µ÷ÊÔ-ºÍF9ÅäºÏÊ¹ÓÃµÄ
+//F5-å¯åŠ¨è°ƒè¯•-å’ŒF9é…åˆä½¿ç”¨çš„
 //
 
-//¶Ïµã F9ÇĞ»»¶Ïµã
+//æ–­ç‚¹ F9åˆ‡æ¢æ–­ç‚¹
 
 //int main()
 //{
@@ -39,9 +39,9 @@
 //	//printf("%p\n", &i);
 //
 //
-//	//VC6.0 »·¾³ÏÂ <=10 ¾ÍËÀÑ­»·ÁË
-//	//gcc ±àÒëÆ÷ <=11 ¾ÍËÀÑ­»·ÁË
-//	//VS2013     <=12 ËÀÑ­»·
+//	//VC6.0 ç¯å¢ƒä¸‹ <=10 å°±æ­»å¾ªç¯äº†
+//	//gcc ç¼–è¯‘å™¨ <=11 å°±æ­»å¾ªç¯äº†
+//	//VS2013     <=12 æ­»å¾ªç¯
 //
 //	for (i = 0; i <= 12; i++)
 //	{
@@ -118,17 +118,17 @@
 
 
 
-//int main()    //ÕÒ³öÎÊÌâ
+//int main()    //æ‰¾å‡ºé—®é¢˜
 //{
 //	int i = 0;
-//	int sum = 0;//±£´æ×îÖÕ½á¹û
+//	int sum = 0;//ä¿å­˜æœ€ç»ˆç»“æœ
 //	int n = 0;
-//	int ret = 1;//±£´ænµÄ½×³Ë
+//	int ret = 1;//ä¿å­˜nçš„é˜¶ä¹˜
 //	scanf("%d", &n);//3 1!+2!+3! = 1+2+6=9 
 //	for (i = 1; i <= n; i++)
 //	{
 //		int j = 0;
-//		ret = 1; //Ã¿´Î´Ó1¿ªÊ¼
+//		ret = 1; //æ¯æ¬¡ä»1å¼€å§‹
 //		for (j = 1; j <= i; j++)
 //		{
 //			ret *= j;
@@ -165,7 +165,7 @@
 //		src++;
 //		dest++;
 //	}
-//	*dest = *src; //¼Ó\0
+//	*dest = *src; //åŠ \0
 //
 //}
 
@@ -174,9 +174,9 @@
 //{
 //	char* ret = dest;
 //	assert(dest!=NULL);
-//	assert(src!=NULL); //¶ÏÑÔ
+//	assert(src!=NULL); //æ–­è¨€
 //
-//	//°ÑsrcÖ¸ÏòµÄ×Ö·û´®¿½±´µ½destÖ¸ÏòµÄ¿Õ¼ä °üº¬'\0'
+//	//æŠŠsrcæŒ‡å‘çš„å­—ç¬¦ä¸²æ‹·è´åˆ°destæŒ‡å‘çš„ç©ºé—´ åŒ…å«'\0'
 //	while (*dest++ = *src++)
 //	{
 //			;
@@ -204,8 +204,8 @@
 //	int n = 100;
 //
 //	     int  *       p = &num;
-//	// const ·ÅÔÚÖ¸Õë±äÁ¿µÄ*×ó±ßÊ±£¬ĞŞÊÎµÄÊÇ*p,Ò²¾ÍÊÇËµ£º²»ÄÜÍ¨¹ıpÀ´¸Ä±ä*p£¨num£©µÄÖµ
-//	// const ·ÅÔÚÖ¸Õë±äÁ¿µÄ*ÓÒ±ßÊÇ£¬ĞŞÊÎµÄÊÇÖ¸Õë±äÁ¿p±¾Éí£¬p²»ÄÜ±»¸Ä±äÁË
+//	// const æ”¾åœ¨æŒ‡é’ˆå˜é‡çš„*å·¦è¾¹æ—¶ï¼Œä¿®é¥°çš„æ˜¯*p,ä¹Ÿå°±æ˜¯è¯´ï¼šä¸èƒ½é€šè¿‡pæ¥æ”¹å˜*pï¼ˆnumï¼‰çš„å€¼
+//	// const æ”¾åœ¨æŒ‡é’ˆå˜é‡çš„*å³è¾¹æ˜¯ï¼Œä¿®é¥°çš„æ˜¯æŒ‡é’ˆå˜é‡pæœ¬èº«ï¼Œpä¸èƒ½è¢«æ”¹å˜äº†
 //
 //	*p = 20;
 //	p = &n;
@@ -221,10 +221,10 @@
 
 
 
-//int my_strlen(const char *str)      //Ä£Äâstrlen
+//int my_strlen(const char *str)      //æ¨¡æ‹Ÿstrlen
 //{
 //	int count = 0;
-//	assert(str != NULL);//±£Ö¤Ö¸ÕëµÄÓĞĞ§ĞÔ
+//	assert(str != NULL);//ä¿è¯æŒ‡é’ˆçš„æœ‰æ•ˆæ€§
 //
 //	while (*str != '\0')
 //	{
@@ -242,5 +242,107 @@
 //	return 0;
 //}
 
+
+
+/**
+Â * @file 1129DemoWork.cpp
+Â * @author LIUFEIFAN
+Â * @brief Â å­—ç¬¦ä¸²ä½œä¸š
+Â * @version 0.4
+Â * @date 2021-11-29
+Â *
+Â * @copyright Copyright (c) 2021
+Â *
+Â */
+
+//int count(char csarr[],char ctarr[],int szs,int szt)
+//{
+//	int i = 0;
+//	int count = 0;
+//	for ( i = 0; i < szs; i++)
+//	{
+//		
+//		if (csarr[i] ==ctarr[0]&&csarr[i + 1] ==ctarr[1])
+//		{
+//			count++;
+//		}
+//	}
+//	return count;
+//}
+//
+//int main()
+//{
+//
+//	char csarr[] = "thisisisianapple";
+//	char ctarr[] = "th";
+//	int i = 0;
+//	int szs = sizeof(csarr) / sizeof(csarr[0])-1;
+//	int szt = sizeof(ctarr) / sizeof(ctarr[0])-1;
+//	printf("ä¸»  ä¸²ï¼š");
+//	for (i = 0; i < szs; i++)
+//	{
+//		printf("%c",csarr[i]);
+//	}
+//	printf("\n");
+//	printf("æ¨¡å¼ä¸²ï¼š");
+//	for (i = 0; i < szt; i++)
+//	{
+//		printf("%c",ctarr[i]);
+//	}
+//	printf("\n");
+//	/*count(csarr,ctarr,szs,szt);*/
+//	printf("æ¨¡å¼ä¸²åœ¨ä¸»ä¸²ä¸­å‡ºç°çš„æ¬¡æ•°ä¸ºï¼š%d\n",count(csarr, ctarr, szs, szt));
+//}
+
+
+
+
+//æ±‚ä¸€ä¸ªæ¨¡å¼ä¸²åœ¨ä¸»ä¸²ä¸­å‡ºç°çš„æ¬¡æ•°
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+	char S[100], T[20];
+	char ch1, ch2;
+	printf("è¯·è¾“å…¥ä¸»å­—ç¬¦ä¸²:\n");
+	int i = 0, j = 0;
+	while ((ch1 = getchar()) != '\n')
+	{
+		S[i] = ch1;
+		i++;
+	}
+	printf("è¯·è¾“å…¥è¦ç­›é€‰çš„å­—ç¬¦ä¸²(æ¨¡å¼ä¸²):\n");
+	while ((ch2 = getchar()) != '\n')
+	{
+		T[j] = ch2;
+		j++;
+	}
+
+	int m, n;//mä¸ºSçš„ä¸‹æ ‡ï¼Œnä¸ºTçš„ä¸‹æ ‡
+	m = n = 0;
+	int num = 0;//numç”¨äºè®°å½•é€‰å®šå•è¯å‡ºç°çš„æ¬¡æ•°
+	while (m <= i && n <= j)
+	{
+		if (S[m] == T[n])
+		{
+			m++;
+			n++;
+		}
+		else
+		{
+			m = m - n + 1;
+			n = 0;
+		}
+		if (n == j)
+		{
+			num++;
+		}
+	}
+	if (m == i + 1)  //ä¸»ä¸²åˆ°å¤´äº†
+	{
+		printf("å‡ºç°çš„æ¬¡æ•°æ˜¯%d\n", num);
+	}
+
+}
 
 
