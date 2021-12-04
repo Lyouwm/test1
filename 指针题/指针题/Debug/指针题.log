@@ -1,0 +1,3 @@
+﻿  test.c
+e:\work\test1\指针题\指针题\test.c(167): warning C4477: “printf”: 格式字符串“%p”需要类型“void *”的参数，但可变参数 1 拥有了类型“unsigned long”
+  指针题.vcxproj -> E:\WORK\test1\指针题\Debug\指针题.exe
