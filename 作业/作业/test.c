@@ -111,41 +111,41 @@
 // 1 4 6 4 1
 // ................
 //
-int main()
-{
-	int arr[10][10] = { 0 };
-	int i = 0;
-	int j = 0;
-	for (i = 0; i < 10; i++)
-	{
-		for (j = 0; j < 10; j++)
-		{
-			if (j == 0)
-			{
-				arr[i][j] = 1;
-			}
-			if (i == j)
-			{
-				arr[i][j] = 1;
-			}
-			if (i >= 2 && j >= 1)
-			{
-				arr[i][j] = arr[i - 1][j] + arr[i - 1][j - 1];
-			}
-		}
-	}
-	//´òÓ¡
-	for (i = 0; i < 10; i++)
-	{
-		for (j = 0; j <=i; j++)
-		{
-			printf("%3d ", arr[i][j]);
-		}
-		printf("\n");
-	}
-
-	return 0;
-}
+//int main()
+//{
+//	int arr[10][10] = { 0 };
+//	int i = 0;
+//	int j = 0;
+//	for (i = 0; i < 10; i++)
+//	{
+//		for (j = 0; j < 10; j++)
+//		{
+//			if (j == 0)
+//			{
+//				arr[i][j] = 1;
+//			}
+//			if (i == j)
+//			{
+//				arr[i][j] = 1;
+//			}
+//			if (i >= 2 && j >= 1)
+//			{
+//				arr[i][j] = arr[i - 1][j] + arr[i - 1][j - 1];
+//			}
+//		}
+//	}
+//	//´òÓ¡
+//	for (i = 0; i < 10; i++)
+//	{
+//		for (j = 0; j <=i; j++)
+//		{
+//			printf("%3d ", arr[i][j]);
+//		}
+//		printf("\n");
+//	}
+//
+//	return 0;
+//}
 
 
 
@@ -256,7 +256,7 @@ int main()
 //int(*(*p)[10])(int *)
 //int((int *)[10])*p
 
-//
+
 //int main()
 //{
 //	int a[5] = { 5, 4, 3, 2, 1 };
@@ -273,7 +273,7 @@ int main()
 //	int *ptr1 = (int *)(&aa + 1);
 //	int *ptr2 = (int *)(*(aa + 1));
 //	printf("%d,%d", *(ptr1 - 1), *(ptr2 - 1));
-//
+//	//
 //	return 0;
 //}
 
@@ -345,13 +345,13 @@ int main()
 //	reverse(arr + k, arr + len - 1);//ÄæĞòÓÒ±ß
 //	reverse(arr, arr + len - 1);//ÄæĞòÕûÌå
 //}
-//abcdef
-//bcdefa
-//cdefab
-//defabc
-//efabcd
-//fabcde
-
+////abcdef
+////bcdefa
+////cdefab
+////defabc
+////efabcd
+////fabcde
+//
 //int is_left_move(char* s1, char* s2)
 //{
 //	int len = strlen(s1);
