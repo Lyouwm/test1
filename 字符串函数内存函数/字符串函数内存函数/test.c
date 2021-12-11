@@ -381,16 +381,16 @@
 
 
 
-int main()
-{
-	char arr1[10] = "abcdefgh";
-	char arr2[] = "bit";
-
-	//strncpy--模拟实现
-	strncpy(arr1, arr2, 6);
-	printf("%s\n",arr1);
-	return 0;
-}
+//int main()
+//{
+//	char arr1[10] = "abcdefgh";
+//	char arr2[] = "bit";
+//
+//	//strncpy--模拟实现
+//	strncpy(arr1, arr2, 6);
+//	printf("%s\n",arr1);
+//	return 0;
+//}
 
 
 //int main()
@@ -403,3 +403,6 @@ int main()
 //
 //	return 0;
 //}
+
+
+
