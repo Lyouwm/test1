@@ -124,7 +124,7 @@ void SearchContact(const struct Contact* ps)
 
 
 
-
+//修改
 void ModifyContact(struct Contact* ps)
 {
 	char name[MAX_NAME];
@@ -149,5 +149,37 @@ void ModifyContact(struct Contact* ps)
 		scanf("%s", ps->data[pos].addr);
 
 		printf("修改完成\n");
+	}
+}
+
+
+//排序
+void SortContact(struct Contact* ps)
+{
+	int i = 0;
+	for ( i = 0; i < ps->size; i++)
+	{
+		int j = 0;
+		for ( j = 0; j < (ps->size)-1-i; j++)
+		{
+			if ( ps->data[j].age>ps->data[j+1].age)
+			{
+				struct PeoInfo temp=ps->data[j];
+				ps->data[j] = ps->data[j + 1];
+				ps->data[j + 1] = temp;
+			}
+		}
+	}
+	//标题
+	printf("%-5s\t%-4s\t%-5s\t%-12s\t%-20s\n", "名字", "年龄", "性别", "电话", "地址");
+	//数据
+	for (i = 0; i < ps->size; i++)
+	{
+		printf("%-5s\t%-4d\t%-5s\t%-12s\t%-20s\n",
+			ps->data[i].name,
+			ps->data[i].age,
+			ps->data[i].sex,
+			ps->data[i].tele,
+			ps->data[i].addr);
 	}
 }
